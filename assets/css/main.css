@@ -1,34 +1,56 @@
 @import '../fonts/fonts.css';
 
 @import '../../components/page/page.css';
-@import '../../components/header/header';
-@import '../../components/main/main';
-@import '../../components/footer/footer';
+@import '../../components/header/header.css';
+@import '../../components/main/main.css';
+@import '../../components/footer/footer.css';
 
 :root {
     --white: #ffffff;
     --black: #212429;
-    --pink: #F784AD;
+    --highlight: #F784AD;
     --purple: #7048E8;
-    --blue: #374FC7;
+    --blue: #4263EB;
+    --dark-blue: #374FC7;
     --red: #F03D3E;
+    --grey-0: #F9FAFC;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --orange: #D84910;
 
+    --bacground: var(--grey-0);
+    --notification: var(--orange);
     --error: var(--red);
-    --success: var(--blue);
+    --success: var(--dark-blue);
 
     --primary: var(--blue);
     --secondary: var(--purple);
 }
 
-* {
-    font-family: 'Roboto', sans-serif;
+html,
+body {
+    height: 100%;
 }
 
-body {
-    margin: 40px auto;
-    max-width: 1110px;
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+
+[class*="__container"] {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 15px;
 }
