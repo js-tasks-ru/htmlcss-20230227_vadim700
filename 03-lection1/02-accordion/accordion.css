@@ -1,6 +1,8 @@
 /* Стилизация аккордеона */
 
-.container {
+
+
+.accordion {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -9,19 +11,19 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
-}
-
-.accordion {
 	color: var(--black);
-	width: 100%;
-	max-width: 730px;
 }
 
 .accordion__item {
+	width: 730px;
 	box-sizing: border-box;
 	border: 1px solid var(--grey-3);
 	padding: 24px 32px;
 	border-radius: 8px;
+}
+
+.accordion__item[open] {
+	padding-bottom: 32px;
 }
 
 .accordion__item:not(:last-child) {
