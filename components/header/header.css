@@ -3,8 +3,9 @@
 }
 
 .header__title {
-	margin: 2.5rem 0;
-	font-size: 3.125rem;
-	line-height: 120%;
+	margin: 96px 0 77px;
+
+	font-size: 50px;
+	line-height: 1.2;
 	color: var(--black);
 }
