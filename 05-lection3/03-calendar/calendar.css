@@ -34,15 +34,10 @@
 	top: 0;
 	left: 0;
 	display: grid;
-	place-items: stretch stretch;
-	grid-template-columns: repeat(7, 1fr);
+	grid-template: repeat(7, 1fr)/repeat(7, 1fr);
 }
 
-/* calendar__wrapper */
-
 .calendar__item {
-	margin: 0;
-	padding: 0;
 	background: var(--white);
 	display: flex;
 	justify-content: center;
@@ -63,5 +58,4 @@
 .calendar__item_between-active {
 	background: var(--calenar-between-bg);
 	/* opacity: .2; */
-	position: relative;
 }
