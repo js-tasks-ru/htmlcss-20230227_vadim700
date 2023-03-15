@@ -21,6 +21,7 @@
 	width: 64px;
 	height: 64px;
 	margin-right: 16px;
+	flex-shrink: 0;
 
 	border-radius: 50%;
 	background-color: var(--grey-2);
@@ -30,26 +31,25 @@
 	display: flex;
 	flex-direction: column;
 	row-gap: 8px;
+	width: 100%;
 }
 
-.skeleton__title-element {
-	width: 172px;
+.skeleton__line {
+	width: 100%;
 	height: 20px;
-
 	background: var(--skeleton-background);
 }
 
-.skeleton__title-element:last-child {
-	width: 257px;
+.skeleton__line_small {
+	width: 40%;
+}
+
+.skeleton__line_half {
+	width: 60%;
 }
 
 .skeleton__description {
 	display: flex;
 	flex-direction: column;
 	row-gap: 8px;
-}
-
-.skeleton__description-element {
-	height: 20px;
-	background: var(--skeleton-background);
 }
