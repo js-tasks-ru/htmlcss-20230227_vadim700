@@ -4,6 +4,13 @@
 	font-family: 'Inter', sans-serif;
 	text-align: center;
 	color: var(--black);
+	background: var(--white);
+}
+
+.footer_description {
+	background-color: transparent;
+	grid-column: span 2;
+	padding: 56px 0;
 }
 
 .footer__title {
