@@ -35,7 +35,8 @@
     --primary: var(--blue);
     --primary-btn-hover: #2342C0;
     --secondary: var(--purple);
-    --secondary-btn-hover: #5028C6;
+
+    --skeleton-background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%)
 }
 
 body {
