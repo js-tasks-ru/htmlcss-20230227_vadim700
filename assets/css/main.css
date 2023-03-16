@@ -13,6 +13,9 @@
     --purple: #7048E8;
     --blue: #4263EB;
     --dark-blue: #374FC7;
+    --black-blue: #334D6E;
+    --grey-blue: #90A0B7;
+    --white-blue: #eceffd;
     --red: #F03D3E;
     --grey-0: #F9FAFC;
     --grey-1: #F8F9FA;
@@ -21,22 +24,21 @@
     --grey-4: #495057;
     --orange: #D84910;
 
+    --calendar: var(--black-blue);
+    --calendar-day: var(--grey-blue);
+    --calenar-between-bg: var(--white-blue);
+
     --bacground: var(--grey-0);
     --notification: var(--orange);
     --error: var(--red);
     --success: var(--dark-blue);
 
     --primary: var(--blue);
+    --primary-btn-hover: #2342C0;
     --secondary: var(--purple);
+    --secondary-btn-hover: #5028C6;
 }
 
-html,
 body {
-    height: 100%;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1140px;
-    padding: 0 15px;
+    font-family: 'Roboto', sans-serif;
 }
