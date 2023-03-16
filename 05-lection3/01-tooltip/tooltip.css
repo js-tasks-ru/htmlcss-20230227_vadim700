@@ -6,7 +6,8 @@
 .tooltip__bubble {
 	position: absolute;
 	bottom: calc(100% + 13px);
-	left: -220%;
+	left: 50%;
+	transform: translateX(-50%);
 	padding: 13px 21px 8px;
 	display: none;
 	font-family: 'Inter';
