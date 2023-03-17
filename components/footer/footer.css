@@ -8,8 +8,7 @@
 }
 
 .footer_description {
-	background-color: transparent;
-	grid-column: span 2;
+	background-color: var(--grey-0);
 	padding: 56px 0;
 }
 

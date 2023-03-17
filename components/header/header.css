@@ -4,8 +4,7 @@
 }
 
 .header_description {
-	background: transparent;
-	grid-column: span 2;
+	background-color: var(--grey-0);
 	text-align: center;
 	padding-top: 25px;
 	padding-bottom: 62px;
