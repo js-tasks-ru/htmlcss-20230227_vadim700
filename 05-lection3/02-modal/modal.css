@@ -18,7 +18,7 @@
 }
 
 .modal__inner {
-	width: 428px;
+	max-width: 428px;
 	padding: 30px 40px 33px;
 	position: relative;
 
