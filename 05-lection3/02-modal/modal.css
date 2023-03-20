@@ -34,6 +34,8 @@
 	display: inline-block;
 	cursor: pointer;
 	line-height: 1;
+	border: none;
+	background: var(--white);
 }
 
 .modal__title {
