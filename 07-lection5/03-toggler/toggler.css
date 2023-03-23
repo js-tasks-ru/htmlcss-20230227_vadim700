@@ -38,15 +38,15 @@
 
 .toggler__control::after {
 	content: '';
-	display: inline-block;
 	position: absolute;
 	width: 24px;
 	height: 24px;
+	left: 1px;
 	top: 50%;
-	left: 2%;
 	transform: translateY(-50%);
 	transition: all 0.5s ease 0s;
 	border-radius: 50%;
+	display: inline-block;
 	background: var(--grey-2);
 	box-sizing: border-box;
 }
@@ -59,7 +59,7 @@
 .toggler__input:checked~.toggler__state .toggler__control::after {
 	content: '';
 	background: var(--white);
-	left: 50%;
+	left: 24px;
 }
 
 .toggler__input:disabled~.toggler__state .toggler__control {
