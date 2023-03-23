@@ -45,6 +45,6 @@
 	display: block;
 }
 
-.formgroup_error .formgroup__wrapper input {
+.formgroup_error .formgroup__input {
 	border: 1px solid var(--error);
 }

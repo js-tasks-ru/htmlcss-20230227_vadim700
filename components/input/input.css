@@ -23,5 +23,5 @@
 .input:disabled {
 	opacity: .5;
 	background: var(--grey-2);
-	cursor: not-allowed;
+	pointer-events: none;
 }
