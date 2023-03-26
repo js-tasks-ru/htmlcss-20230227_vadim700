@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+</head>
+
+<body>
+    <div class="formgroup">
+        <label for="input" class="formgroup__label">Label</label>
+        <div class="formgroup__wrapper">
+            <input class="formgroup__input input" type="text" placeholder="Placeholder">
+            <svg class="formgroup__icon formgroup__icon_success">
+                <use href="../../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="formgroup__icon formgroup__icon_error">
+                <use href="../../assets/images/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </div>
+    <br>
+    <div class="formgroup">
+        <label for="input" class="formgroup__label">Focus</label>
+        <div class="formgroup__wrapper">
+            <input class="formgroup__input input" type="text" placeholder="Placeholder" value="Filled Input" autofocus>
+            <svg class="formgroup__icon formgroup__icon_success">
+                <use href="../../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="formgroup__icon formgroup__icon_error">
+                <use href="../../assets/images/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </div>
+    <br>
+    <div class="formgroup formgroup_success">
+        <label for="input" class="formgroup__label">Success</label>
+        <div class="formgroup__wrapper">
+            <input class="formgroup__input input" type="text" placeholder="Placeholder" value="Success">
+            <svg class="formgroup__icon formgroup__icon_success">
+                <use href="../../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="formgroup__icon formgroup__icon_error">
+                <use href="../../assets/images/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </div>
+    <br>
+    <div class="formgroup formgroup_error">
+        <label for="input" class="formgroup__label">Error</label>
+        <div class="formgroup__wrapper">
+            <input class="formgroup__input input" type="text" placeholder="Placeholder" value="Error">
+            <svg class="formgroup__icon formgroup__icon_success">
+                <use href="../../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="formgroup__icon formgroup__icon_error">
+                <use href="../../assets/images/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </div>
+    <br>
+    <div class="formgroup formgroup_disabled">
+        <label for="input" class="formgroup__label">disabled</label>
+        <div class="formgroup__wrapper">
+            <input class="formgroup__input input" type="text" placeholder="Placeholder" value="Disabled" disabled>
+            <svg class="formgroup__icon formgroup__icon_success">
+                <use href="../../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="formgroup__icon formgroup__icon_error">
+                <use href="../../assets/images/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </div>
+</body>
+
 </html>
