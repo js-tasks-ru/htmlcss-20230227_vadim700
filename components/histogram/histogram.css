@@ -13,6 +13,11 @@
 	color: var(--black);
 }
 
+
+.histogram__preview {
+	width: 100%;
+}
+
 .histogram__header {
 	display: flex;
 	justify-content: space-between;
