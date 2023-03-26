@@ -1,0 +1,15 @@
+.tabs>input {
+	/* display: none; */
+}
+
+.tabs__scroller {}
+
+.tabs__label {}
+
+.tabs__content {
+	display: none;
+}
+
+#tab1:checked~.tabs__content_css {
+	display: block;
+}

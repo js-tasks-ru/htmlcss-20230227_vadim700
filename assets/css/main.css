@@ -12,6 +12,7 @@
 @import '../../components/tooltip/tooltip.css';
 @import '../../components/modal/modal.css';
 @import '../../components/calendar/calendar.css';
+@import '../../components/tabs/tabs.css';
 @import '../../components/avatar/avatar.css';
 @import '../../components/component-description/component-description.css';
 @import '../../components/side-bar/side-bar.css';
@@ -19,6 +20,7 @@
 @import '../../components/footer/footer.css';
 
 :root {
+    --extra-black: #000000;
     --white: #ffffff;
     --black: #212429;
     --highlight: #F784AD;

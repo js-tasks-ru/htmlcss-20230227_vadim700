@@ -377,3 +377,9 @@ template {
 [hidden] {
 	display: none;
 }
+
+figure,
+pre,
+code {
+	margin: 0;
+}

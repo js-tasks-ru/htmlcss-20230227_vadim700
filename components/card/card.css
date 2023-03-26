@@ -22,6 +22,15 @@
 	margin: auto;
 }
 
+.card__content_modal {
+	background: rgba(0, 0, 0, .15);
+	margin: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .card__title {
 	font-size: 21px;
 	line-height: 1.19;

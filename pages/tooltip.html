@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/css/normalize.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+	<div class="page page_description">
+		<header class="header header_description">
+			<div class="container">
+				header
+			</div>
+		</header>
+		<main class="main main_descripton">
+			<div class="container" style="height: 100%;">
+				<div class="description-wrapper">
+					<aside class="description-wrapper__side-bar side-bar">
+						<h2 class="side-bar__title">Elements</h2>
+						<nav class="side-bar__nav">
+							<ul class="side-bar__list">
+								<li class="side-bar__item">
+									<a href="#" class="side-bar__link">Tooltip</a>
+								</li>
+								<li class="side-bar__item">
+									<a href="#" class="side-bar__link">Custom form elements</a>
+								</li>
+								<li class="side-bar__item">
+									<a href="#" class="side-bar__link">Calendar</a>
+								</li>
+								<li class="side-bar__item">
+									<a href="#" class="side-bar__link">Modal dialog</a>
+								</li>
+								<li class="side-bar__item">
+									<a href="#" class="side-bar__link">Histogram</a>
+								</li>
+								<li class="side-bar__item">
+									<a href="#" class="side-bar__link">Avatar</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+
+					<div class="description-wrapper__component-description component-description">
+						<div class="component-description__top">
+							<h1 class="component-description__title">Tooltip</h1>
+							<div class="component-description__item-top">
+								<div class="tooltip">
+									<div class="tolltip__trigger">
+										<svg class="tooltip__icon">
+											<use href="/assets/images/sprite.svg#help"></use>
+										</svg>
+									</div>
+									<div class="tooltip__bubble">Helper Text</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="component-description__tabs tabs">
+							<input class="tabs__input" type="radio" id="#tab1" checked name="tabs">
+							<input class="tabs__input" type="radio" id="#tab2" name="tabs">
+							<div class="tabs__scroller">
+								<label class="tabs__label" for="#tab1">HTML</label>
+								<label class="tabs__label" for="#tab2">CSS</label>
+							</div>
+							<div class="tabs__content tabs__content_html">
+								<figure>
+									<pre>
+										<code>
+&lt;div class="tooltip">
+	&lt;div class="tolltip__trigger">
+		&lt;svg class="tooltip__icon">
+			&lt;use href="/assets/images/sprite.svg#help">&lt;/use&gt;
+		&lt;/svg&gt;
+	&lt;/div&gt;
+	&lt;div class="tooltip__bubble">Helper Text&lt;/div&gt;
+&lt;/div&gt;
+										</code>
+									</pre>
+								</figure>
+							</div>
+							<div class="tabs__content tabs__content_css">
+								<figure>
+									<pre>
+										<code>
+											<p>Hello world! It's CSS</p>
+										</code>
+									</pre>
+								</figure>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer footer_description">footer</footer>
+	</div>
+</body>
+
+</html>
