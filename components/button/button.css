@@ -20,6 +20,14 @@
 	background-color: var(--primary);
 }
 
+.button_preview {
+	padding: 8px;
+	font-size: 12px;
+	min-width: 105px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
 .button_primary:hover {
 	background-color: var(--primary-btn-hover);
 }

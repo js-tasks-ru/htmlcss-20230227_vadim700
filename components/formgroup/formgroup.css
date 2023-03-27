@@ -13,6 +13,10 @@
 	color: var(--grey-3);
 }
 
+.formgroup__label_preview {
+	font-size: 10px;
+}
+
 .formgroup__wrapper {
 	position: relative;
 }

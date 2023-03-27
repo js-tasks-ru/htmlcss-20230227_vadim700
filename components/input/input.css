@@ -12,6 +12,10 @@
 	color: var(--grey-4);
 }
 
+.input_preview {
+	padding: 2px 15px;
+}
+
 .input::placeholder {
 	color: var(--grey-2);
 }
@@ -24,4 +28,12 @@
 	opacity: .5;
 	background: var(--grey-2);
 	pointer-events: none;
+}
+
+.input_preview {
+	padding: 5px 15px;
+}
+
+.input_preview::placeholder {
+	font-size: 14px;
 }

@@ -31,17 +31,62 @@
                   <div class="card__subtitle">Container</div>
                </a>
                <a href="#" class="card content__card">
-                  <label class="card__content checkbox">
-                     <input type="checkbox" class="checkbox__input">
-                     <div class="checkbox__state">
-                        <div class="checkbox__control">
-                           <svg class="checkbox__icon">
-                              <use href="/assets/images/sprite.svg#check"></use>
-                           </svg>
+                  <div class="card__content-item" style="pointer-events: none;">
+                     <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <div class="checkbox__state">
+                           <div class="checkbox__control">
+                              <svg class="checkbox__icon">
+                                 <use href="/assets/images/sprite.svg#check"></use>
+                              </svg>
+                           </div>
+                           <div class="checkbox__label">Default</div>
                         </div>
-                        <div class="checkbox__label">Checked</div>
-                     </div>
-                  </label>
+                     </label>
+                     <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" checked>
+                        <div class="checkbox__state">
+                           <div class="checkbox__control">
+                              <svg class="checkbox__icon">
+                                 <use href="/assets/images/sprite.svg#check"></use>
+                              </svg>
+                           </div>
+                           <div class="checkbox__label">Checked</div>
+                        </div>
+                     </label>
+                     <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" disabled>
+                        <div class="checkbox__state">
+                           <div class="checkbox__control">
+                              <svg class="checkbox__icon">
+                                 <use href="/assets/images/sprite.svg#check"></use>
+                              </svg>
+                           </div>
+                           <div class="checkbox__label">Disabled</div>
+                        </div>
+                     </label>
+                     <label class="radio">
+                        <input type="radio" class="radio__input" name="radio-name">
+                        <div class="radio__state">
+                           <div class="radio__control"></div>
+                           <div class="radio__label">Default</div>
+                        </div>
+                     </label>
+                     <label class="radio">
+                        <input type="radio" class="radio__input" name="radio-name" checked>
+                        <div class="radio__state">
+                           <div class="radio__control"></div>
+                           <div class="radio__label">Selected</div>
+                        </div>
+                     </label>
+                     <label class="radio">
+                        <input type="radio" class="radio__input" name="radio-name" disabled>
+                        <div class="radio__state">
+                           <div class="radio__control"></div>
+                           <div class="radio__label">Disabled</div>
+                        </div>
+                     </label>
+                  </div>
                   <div class="card__title">Custom form elements</div>
                   <div class="card__subtitle">Element</div>
                </a>
@@ -100,7 +145,21 @@
                </a>
                <a href="#" class="card content__card">
                   <div class="card__content card__content_modal">
-                     inputs
+                     <div class="modal modal_preview">
+                        <div class="modal__inner modal__inner_review">
+                           <div class="modal__content">
+                              <div class="formgroup">
+                                 <label for="input" class="formgroup__label formgroup__label_preview">Name</label>
+                                 <input class="formgroup__input input input_preview" type="text"
+                                    placeholder="Placeholder">
+                                 <label for="input" class="formgroup__label formgroup__label_preview">Email</label>
+                                 <input class="formgroup__input input input_preview" type="text"
+                                    placeholder="Placeholder">
+                                 <button class="button button_primary button_preview">Submit</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                   <div class="card__title">Modal dialog</div>
                   <div class="card__subtitle">Container</div>
