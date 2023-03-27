@@ -15,6 +15,9 @@
 @import '../../components/tabs/tabs.css';
 @import '../../components/avatar/avatar.css';
 @import '../../components/input/input.css';
+@import '../../components/checkbox/checkbox.css';
+@import '../../components/radio/radio.css';
+@import '../../components/toggler/toggler.css';
 @import '../../components/formgroup/formgroup.css';
 @import '../../components/component-description/component-description.css';
 @import '../../components/side-bar/side-bar.css';
