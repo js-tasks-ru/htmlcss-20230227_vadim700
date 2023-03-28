@@ -5,3 +5,11 @@
 	height: 100%;
 	column-gap: 56px;
 }
+
+.description-wrapper__component-description {
+	display: grid;
+	grid-template: auto 1fr/1fr;
+	place-content: start;
+	row-gap: 64px;
+	align-content: flex-start;
+}

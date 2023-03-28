@@ -1,15 +1,65 @@
-.tabs>input {
-	/* display: none; */
+.tabs {
+	display: flex;
+	flex-direction: column;
 }
 
-.tabs__scroller {}
-
-.tabs__label {}
-
-.tabs__content {
+.tabs__input {
 	display: none;
 }
 
-#tab1:checked~.tabs__content_css {
+.tabs__scroller {
+	position: relative;
+	margin-bottom: 13px;
+}
+
+.tabs__scroller::after {
+	content: '';
+	position: absolute;
+	width: 100vw;
+	height: 1px;
+	bottom: -14px;
+	left: -100px;
+	right: 0;
+	background-color: var(--grey-2);
+}
+
+.tabs__label {
+	position: relative;
+	cursor: pointer;
+}
+
+.tabs__label:not(:last-child) {
+	margin-right: 40px;
+}
+
+.tabs__label::after {
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 0;
+	left: 50%;
+	right: 50%;
+	transform: translatex(-50%);
+	bottom: -13px;
+	background-color: var(--black);
+	transition: all 0.3s ease 0s;
+}
+
+.tabs__label:hover::after {
+	width: 120%;
+}
+
+.tabs__content {
+	padding-top: 50px;
+	display: none;
+}
+
+.tabs__input_tab1:checked~.tabs__scroller .tabs__label_tab1::after,
+.tabs__input_tab2:checked~.tabs__scroller .tabs__label_tab2::after {
+	width: 120%;
+}
+
+.tabs__input_tab1:checked~.tabs__content_tab1,
+.tabs__input_tab2:checked~.tabs__content_tab2 {
 	display: block;
 }

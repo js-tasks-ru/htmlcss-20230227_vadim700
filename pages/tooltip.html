@@ -59,13 +59,13 @@
 						</div>
 
 						<div class="component-description__tabs tabs">
-							<input class="tabs__input" type="radio" id="#tab1" checked name="tabs">
-							<input class="tabs__input" type="radio" id="#tab2" name="tabs">
+							<input checked class="tabs__input tabs__input_tab1" type="radio" id="#tab1" name="tabs">
+							<input class="tabs__input tabs__input_tab2" type="radio" id="#tab2" name="tabs">
 							<div class="tabs__scroller">
-								<label class="tabs__label" for="#tab1">HTML</label>
-								<label class="tabs__label" for="#tab2">CSS</label>
+								<label class="tabs__label tabs__label_tab1" for="#tab1">HTML</label>
+								<label class="tabs__label tabs__label_tab2" for="#tab2">CSS</label>
 							</div>
-							<div class="tabs__content tabs__content_html">
+							<div class="tabs__content tabs__content_tab1">
 								<figure>
 									<pre>
 										<code>
@@ -81,13 +81,55 @@
 									</pre>
 								</figure>
 							</div>
-							<div class="tabs__content tabs__content_css">
+							<div class="tabs__content tabs__content_tab2">
 								<figure>
 									<pre>
 										<code>
-											<p>Hello world! It's CSS</p>
-										</code>
-									</pre>
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip__bubble {
+	position: absolute;
+	bottom: calc(100% + 13px);
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 13px 21px 8px;
+	display: none;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	white-space: nowrap;
+	color: var(--grey-2);
+	background: var(--blue);
+	box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+	border-radius: 10px;
+}
+
+.tooltip__icon {
+	width: 22px;
+	height: 22px;
+}
+
+.tooltip__bubble::after {
+	content: '';
+	border: 10px solid transparent;
+	border-top: 10px solid var(--blue);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.tolltip__trigger:hover~.tooltip__bubble {
+	display: block;
+}
+													</code>
+												</pre>
 								</figure>
 							</div>
 						</div>
@@ -96,7 +138,7 @@
 				</div>
 			</div>
 		</main>
-		<footer class="footer footer_description">footer</footer>
+		<footer class="footer footer_description">Reusable component library</footer>
 	</div>
 </body>
 
