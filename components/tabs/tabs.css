@@ -4,7 +4,8 @@
 }
 
 .tabs__input {
-	display: none;
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
 }
 
 .tabs__scroller {
@@ -45,17 +46,15 @@
 	transition: all 0.3s ease 0s;
 }
 
-.tabs__label:hover::after {
-	width: 120%;
-}
-
 .tabs__content {
 	padding-top: 50px;
 	display: none;
 }
 
 .tabs__input_tab1:checked~.tabs__scroller .tabs__label_tab1::after,
-.tabs__input_tab2:checked~.tabs__scroller .tabs__label_tab2::after {
+.tabs__input_tab2:checked~.tabs__scroller .tabs__label_tab2::after,
+.tabs__input_tab1:focus~.tabs__scroller .tabs__label_tab1::after,
+.tabs__input_tab2:focus~.tabs__scroller .tabs__label_tab2::after {
 	width: 120%;
 }
 

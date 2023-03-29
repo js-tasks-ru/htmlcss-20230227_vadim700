@@ -12,7 +12,10 @@
 	display: block;
 	position: relative;
 	background-color: var(--white);
-	border-radius: 8px;
+	text-align: left;
+	padding: 20px;
+	background: rgba(0, 0, 0, .15);
+	pointer-events: none;
 }
 
 .modal__body {

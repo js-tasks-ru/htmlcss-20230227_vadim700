@@ -31,7 +31,7 @@
                   <div class="card__subtitle">Container</div>
                </a>
                <a href="#" class="card content__card">
-                  <div class="card__content-item" style="pointer-events: none;">
+                  <div class="card__content card__content_grid-preview">
                      <label class="checkbox">
                         <input type="checkbox" class="checkbox__input">
                         <div class="checkbox__state">
@@ -144,19 +144,15 @@
                   <div class="card__subtitle">Container</div>
                </a>
                <a href="#" class="card content__card">
-                  <div class="card__content card__content_modal">
-                     <div class="modal modal_preview">
-                        <div class="modal__inner modal__inner_review">
-                           <div class="modal__content">
-                              <div class="formgroup">
-                                 <label for="input" class="formgroup__label formgroup__label_preview">Name</label>
-                                 <input class="formgroup__input input input_preview" type="text"
-                                    placeholder="Placeholder">
-                                 <label for="input" class="formgroup__label formgroup__label_preview">Email</label>
-                                 <input class="formgroup__input input input_preview" type="text"
-                                    placeholder="Placeholder">
-                                 <button class="button button_primary button_preview">Submit</button>
-                              </div>
+                  <div class="card__content modal_preview">
+                     <div class="modal__inner modal__inner_review">
+                        <div class="modal__content">
+                           <div class="formgroup formgroup_preview">
+                              <label for="input" class="formgroup__label ">Name</label>
+                              <input class="formgroup__input input input_preview" type="text" placeholder="Placeholder">
+                              <label for="input" class="formgroup__label">Email</label>
+                              <input class="formgroup__input input input_preview" type="text" placeholder="Placeholder">
+                              <button class="button button_primary button_preview">Submit</button>
                            </div>
                         </div>
                      </div>

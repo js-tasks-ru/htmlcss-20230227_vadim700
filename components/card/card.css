@@ -20,21 +20,15 @@
 
 .card__content {
 	margin: auto;
+	pointer-events: none;
 }
 
-.card__content-item {
+.card__content_grid-preview {
 	display: grid;
 	grid-template: repeat(3, auto)/repeat(2, auto);
 	margin: auto;
 	gap: 16px 37px;
 	grid-auto-flow: column;
-}
-
-.card__content_modal {
-	padding: 20px;
-	background-color: rgba(0, 0, 0, .15);
-	text-align: left;
-	pointer-events: none;
 }
 
 .card__title {
