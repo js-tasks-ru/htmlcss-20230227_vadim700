@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
 
-    </body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./burger-menu.css">
+    <script defer src="./burger-menu.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="header__logo">
+            <span></span>
+        </a>
+        <div class="header__menu menu">
+            <h2 class="menu__title">Components</h2>
+            <button type="button" class="menu__icon icon-menu">
+                <svg>
+                    <use href="../../assets/images/sprite.svg#close-popup"></use>
+                </svg>
+            </button>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Modal</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Tooltip</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Avatar</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Calendar</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Histogram</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Custom form elements/a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__bottom">
+            Main page
+        </div>
+    </header>
+</body>
+
 </html>
