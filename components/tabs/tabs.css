@@ -51,14 +51,14 @@
 	display: none;
 }
 
-.tabs__input_tab1:checked~.tabs__scroller .tabs__label_tab1::after,
-.tabs__input_tab2:checked~.tabs__scroller .tabs__label_tab2::after,
-.tabs__input_tab1:focus~.tabs__scroller .tabs__label_tab1::after,
-.tabs__input_tab2:focus~.tabs__scroller .tabs__label_tab2::after {
+.tabs__input_html:checked~.tabs__scroller .tabs__label_html::after,
+.tabs__input_css:checked~.tabs__scroller .tabs__label_css::after,
+.tabs__input_html:focus~.tabs__scroller .tabs__label_html::after,
+.tabs__input_css:focus~.tabs__scroller .tabs__label_css::after {
 	width: 120%;
 }
 
-.tabs__input_tab1:checked~.tabs__content_tab1,
-.tabs__input_tab2:checked~.tabs__content_tab2 {
+.tabs__input_html:checked~.tabs__content_html,
+.tabs__input_css:checked~.tabs__content_css {
 	display: block;
 }
