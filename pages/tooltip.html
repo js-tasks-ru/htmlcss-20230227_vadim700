@@ -3,6 +3,7 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../node_modules/highlight.js/styles/atom-one-light.css">
 	<link rel="stylesheet" href="../assets/css/normalize.css">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -68,7 +69,7 @@
 							<div class="tabs__content tabs__content_html">
 								<figure>
 									<pre>
-										<code>
+										<code class="language-html">
 &lt;div class="tooltip"&gt;
 	&lt;div class="tolltip__trigger"&gt;
 		&lt;svg class="tooltip__icon"&gt;
@@ -84,7 +85,7 @@
 							<div class="tabs__content tabs__content_css">
 								<figure>
 									<pre>
-										<code>
+										<code class="language-css">
 .tooltip {
 	position: relative;
 	display: inline-block;
@@ -128,8 +129,8 @@
 .tolltip__trigger:hover~.tooltip__bubble {
 	display: block;
 }
-													</code>
-												</pre>
+										</code>
+									</pre>
 								</figure>
 							</div>
 						</div>
@@ -140,6 +141,8 @@
 		</main>
 		<footer class="footer footer_description">Reusable component library</footer>
 	</div>
+	<script src="../highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 </body>
 
 </html>
