@@ -55,7 +55,7 @@
 .tabs__input_css:checked~.tabs__scroller .tabs__label_css::after,
 .tabs__input_html:focus~.tabs__scroller .tabs__label_html::after,
 .tabs__input_css:focus~.tabs__scroller .tabs__label_css::after {
-	width: 120%;
+	width: 100%;
 }
 
 .tabs__input_html:checked~.tabs__content_html,
