@@ -3,12 +3,12 @@
 	padding-bottom: 136px;
 	font-family: 'Inter', sans-serif;
 	text-align: center;
-	color: var(--black);
-	background: var(--white);
+	color: var(--text-primary);
+	background: var(--secondary-bg);
 }
 
 .footer_description {
-	background-color: var(--grey-0);
+	background-color: var(--secondary-bg);
 	padding: 56px 0;
 }
 

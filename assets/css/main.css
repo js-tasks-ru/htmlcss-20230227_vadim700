@@ -29,13 +29,19 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #87888b;
     --orange: #D84910;
+
+    --text-primary: var(--black);
+    --text-active: var(--black);
+    --main-bacground: var(--grey-0);
+    --dark-bacground: var(--black);
+    --secondary-bg: var(--white);
 
     --calendar: var(--black-blue);
     --calendar-day: var(--grey-blue);
     --calenar-between-bg: var(--white-blue);
 
-    --bacground: var(--grey-0);
     --notification: var(--orange);
     --error: var(--red);
     --success: var(--dark-blue);
@@ -44,7 +50,16 @@
     --primary-btn-hover: #2342C0;
     --secondary: var(--purple);
 
-    --skeleton-background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%)
+    --skeleton-background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+:root[data-theme-dark] {
+    /* background: #000; */
+    --text-primary: var(--grey-5);
+    --text-active: var(--grey-1);
+    --main-bacground: var(--grey-4);
+    --secondary-bg: var(--black);
+    --dark-bacground: var(--grey-1);
 }
 
 body,
