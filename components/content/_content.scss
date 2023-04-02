@@ -1,0 +1,12 @@
+.content {
+	background-color: var(--grey-0);
+
+	&__body {
+		padding-top: 67px;
+		padding-bottom: 204px;
+
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+}
