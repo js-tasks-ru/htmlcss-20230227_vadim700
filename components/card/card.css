@@ -25,7 +25,8 @@
 
 .card__content_grid-preview {
 	display: grid;
-	grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+	grid-template: repeat(3, auto)/repeat(2, auto);
+	justify-content: start;
 	margin: auto;
 	gap: 16px 37px;
 	grid-auto-flow: column;

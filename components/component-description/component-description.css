@@ -10,7 +10,6 @@
 
 .component-description__title {
 	margin: 0;
-	margin-bottom: 70px;
 	font-size: 28px;
 	line-height: 1.36;
 	color: var(--grey-4);
@@ -18,6 +17,7 @@
 
 .component-description__tabs {}
 
-.component-description__item-top {
-	padding-left: 50px;
+.component-description__top-content {
+	/* padding-left: 50px; */
+	padding: 60px 0px 60px 0px;
 }

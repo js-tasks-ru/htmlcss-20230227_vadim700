@@ -6,6 +6,7 @@
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, .4);
+	z-index: 2;
 }
 
 .modal__body {
@@ -13,15 +14,12 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
-
 }
 
 .modal__inner {
 	max-width: 428px;
 	padding: 30px 40px 33px;
 	position: relative;
-
 	background: var(--white);
 	border-radius: 8px;
 	font-family: 'Inter', sans-serif;
@@ -31,6 +29,8 @@
 	position: absolute;
 	top: 15px;
 	right: 15px;
+	width: 16px;
+	height: 16px;
 	display: inline-block;
 	cursor: pointer;
 	line-height: 1;

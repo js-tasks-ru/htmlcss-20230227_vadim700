@@ -4,12 +4,16 @@
 	overflow: hidden;
 	width: 102px;
 	height: 102px;
-
 }
 
 .avatar_preview {
 	width: 160px;
 	height: 160px;
+}
+
+.avatar_preview-component {
+	width: 200px;
+	height: 200px;
 }
 
 .avatar__img {

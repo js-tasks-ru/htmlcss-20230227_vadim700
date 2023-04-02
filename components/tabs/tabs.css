@@ -49,6 +49,7 @@
 .tabs__content {
 	padding-top: 50px;
 	display: none;
+	overflow-x: auto;
 }
 
 .tabs__input_html:checked~.tabs__scroller .tabs__label_html::after,

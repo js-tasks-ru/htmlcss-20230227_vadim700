@@ -39,14 +39,21 @@
 }
 
 .modal__close {
+	display: block;
 	position: absolute;
 	top: 15px;
 	right: 15px;
-	display: inline-block;
 	cursor: pointer;
 	line-height: 1;
 	border: none;
 	background: var(--white);
+}
+
+.modal__close svg {
+	display: block;
+	width: 16px;
+	height: 16px;
+
 }
 
 .modal__title {
