@@ -1,7 +1,0 @@
-.description-wrapper {
-	display: grid;
-	grid-template-columns: auto 1fr;
-	align-items: stretch;
-	height: 100%;
-	column-gap: 56px;
-}
