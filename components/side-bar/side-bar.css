@@ -22,8 +22,6 @@
 	list-style: none;
 }
 
-
-
 .side-bar__item {}
 
 .side-bar__link {
@@ -33,8 +31,12 @@
 	color: var(--black);
 }
 
-.side-bar__link:hover {
+.side-bar__link_selected {
 	color: var(--notification);
+}
+
+.side-bar__link:hover {
+	text-decoration: underline;
 }
 
 .side-bar__item:not(:last-child) {
