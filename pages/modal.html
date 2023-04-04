@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../node_modules/highlight.js/styles/atom-one-light.css">
+   <link rel="stylesheet" href="../assets/css/normalize.css">
+   <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+   <div class="page page_description">
+      <header class="header header_description">
+         <div class="container">
+            header
+         </div>
+      </header>
+      <main class="main main_descripton">
+         <div class="container" style="height: 100%;">
+            <div class="description-wrapper">
+               <aside class="description-wrapper__side-bar side-bar">
+                  <h2 class="side-bar__title">Elements</h2>
+                  <nav class="side-bar__nav">
+                     <ul class="side-bar__list">
+                        <li class="side-bar__item">
+                           <a href="tooltip.html" class="side-bar__link ">Tooltip</a>
+                        </li>
+                        <li class="side-bar__item">
+                           <a href="/pages/radio-buttons.html" class="side-bar__link ">Custom form elements</a>
+                        </li>
+                        <li class="side-bar__item">
+                           <a href="/pages/calendar.html" class="side-bar__link ">Calendar</a>
+                        </li>
+                        <li class="side-bar__item">
+                           <a href="/pages/modal.html" class="side-bar__link side-bar__link_selected">Modal dialog</a>
+                        </li>
+                        <li class="side-bar__item">
+                           <a href="/pages/histogram.html" class="side-bar__link ">Histogram</a>
+                        </li>
+                        <li class="side-bar__item">
+                           <a href="/pages/avatar.html" class="side-bar__link ">Avatar</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </aside>
+
+               <div class="description-wrapper__component-description component-description">
+                  <div class="component-description__top">
+                     <h1 class="component-description__title">Modal dialog</h1>
+                     <div class="component-description__top-content">
+                        <button id="modal-open" class="button button_primary">Basic CSS-Only Modal</button>
+                     </div>
+
+                  </div>
+                  <div class="component-description__tabs tabs">
+                     <input checked class="tabs__input tabs__input_html" type="radio" id="#html" name="tabs">
+                     <input class="tabs__input tabs__input_css" type="radio" id="#css" name="tabs">
+                     <div class="tabs__scroller">
+                        <label class="tabs__label tabs__label_html" for="#html">HTML</label>
+                        <label class="tabs__label tabs__label_css" for="#css">CSS</label>
+                     </div>
+                     <div class="tabs__content tabs__content_html">
+                        <figure>
+                           <pre>
+									<code class="language-html">
+&lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt;
+   &lt;div class=&quot;modal__body&quot;&gt;
+      &lt;div class=&quot;modal__inner&quot;&gt;
+         &lt;button id=&quot;modal-close&quot; class=&quot;modal__close&quot;&gt;
+            &lt;svg&gt;
+               &lt;use href=&quot;../assets/images/sprite.svg#close-popup&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+         &lt;/button&gt;
+         &lt;h3 class=&quot;modal__title&quot;&gt;Modal title&lt;/h3&gt;
+         &lt;div class=&quot;modal__content&quot;&gt;
+            &lt;form action=&quot;#&quot;&gt;
+               &lt;div class=&quot;formgroup&quot;&gt;
+                  &lt;label for=&quot;input&quot; class=&quot;formgroup__label&quot;&gt;NAME&lt;/label&gt;
+                  &lt;div class=&quot;formgroup__wrapper&quot;&gt;
+                     &lt;input class=&quot;formgroup__input input&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot;&gt;
+                     &lt;svg class=&quot;formgroup__icon formgroup__icon_success&quot;&gt;
+                        &lt;use href=&quot;../../assets/images/sprite.svg#success&quot;&gt;&lt;/use&gt;
+                     &lt;/svg&gt;
+                     &lt;svg class=&quot;formgroup__icon formgroup__icon_error&quot;&gt;
+                        &lt;use href=&quot;../../assets/images/sprite.svg#error&quot;&gt;&lt;/use&gt;
+                     &lt;/svg&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;formgroup&quot;&gt;
+                  &lt;label for=&quot;input&quot; class=&quot;formgroup__label&quot;&gt;EMAIL&lt;/label&gt;
+                  &lt;div class=&quot;formgroup__wrapper&quot;&gt;
+                     &lt;input class=&quot;formgroup__input input&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot;&gt;
+                     &lt;svg class=&quot;formgroup__icon formgroup__icon_success&quot;&gt;
+                        &lt;use href=&quot;../../assets/images/sprite.svg#success&quot;&gt;&lt;/use&gt;
+                     &lt;/svg&gt;
+                     &lt;svg class=&quot;formgroup__icon formgroup__icon_error&quot;&gt;
+                        &lt;use href=&quot;../../assets/images/sprite.svg#error&quot;&gt;&lt;/use&gt;
+                     &lt;/svg&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;button type=&quot;submit&quot; class=&quot;button button_primary&quot;&gt;Submit&lt;/button&gt;
+            &lt;/form&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+									</code>
+								</pre>
+                        </figure>
+                     </div>
+                     <div class="tabs__content tabs__content_css">
+                        <figure>
+                           <pre>
+									<code class="language-css">
+.modal {
+   display: none;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, .4);
+}
+
+.modal_preview {
+   display: block;
+   position: relative;
+   background-color: var(--white);
+   text-align: left;
+   padding: 20px;
+   background: rgba(0, 0, 0, .15);
+   pointer-events: none;
+}
+
+.modal__body {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.modal__inner {
+   max-width: 428px;
+   padding: 30px 40px 33px;
+   position: relative;
+   background: var(--white);
+   border-radius: 8px;
+   font-family: 'Inter', sans-serif;
+}
+
+.modal__inner_review {
+   padding: 15px;
+}
+
+.modal__close {
+   display: block;
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   cursor: pointer;
+   line-height: 1;
+   border: none;
+   background: var(--white);
+}
+
+.modal__close svg {
+   display: block;
+   width: 16px;
+   height: 16px;
+
+}
+
+.modal__title {
+   margin: 0;
+   margin-bottom: 14px;
+   font-size: 20px;
+   line-height: 1.2;
+   font-weight: 600;
+   color: var(--black-blue);
+}
+
+.modal__content {
+   font-size: 16px;
+   line-height: 1.5;
+   font-weight: 400;
+   color: var(--grey-4)
+}
+									</code>
+								</pre>
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </main>
+      <footer class="footer footer_description">Reusable component library</footer>
+      <div class="modal" id="modal">
+         <div class="modal__body">
+            <div class="modal__inner">
+               <button id="modal-close" class="modal__close">
+                  <svg>
+                     <use href="../assets/images/sprite.svg#close-popup"></use>
+                  </svg>
+               </button>
+               <h3 class="modal__title">Modal title</h3>
+               <div class="modal__content">
+                  <form action="#">
+                     <div class="formgroup">
+                        <label for="input" class="formgroup__label">NAME</label>
+                        <div class="formgroup__wrapper">
+                           <input class="formgroup__input input" type="text" placeholder="Placeholder">
+                           <svg class="formgroup__icon formgroup__icon_success">
+                              <use href="../../assets/images/sprite.svg#success"></use>
+                           </svg>
+                           <svg class="formgroup__icon formgroup__icon_error">
+                              <use href="../../assets/images/sprite.svg#error"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="formgroup">
+                        <label for="input" class="formgroup__label">EMAIL</label>
+                        <div class="formgroup__wrapper">
+                           <input class="formgroup__input input" type="text" placeholder="Placeholder">
+                           <svg class="formgroup__icon formgroup__icon_success">
+                              <use href="../../assets/images/sprite.svg#success"></use>
+                           </svg>
+                           <svg class="formgroup__icon formgroup__icon_error">
+                              <use href="../../assets/images/sprite.svg#error"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <br>
+                     <button type="submit" class="button button_primary">Submit</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="../highlight.min.js"></script>
+   <script>hljs.highlightAll();</script>
+   <script src="../05-lection3/02-modal/index.js"></script>
+</body>
+
+</html>

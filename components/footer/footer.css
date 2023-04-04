@@ -7,10 +7,6 @@
 	background: var(--white);
 }
 
-.footer_description {
-	background-color: var(--grey-0);
-	padding: 56px 0;
-}
 
 .footer__title {
 	font-size: 38px;
@@ -25,4 +21,18 @@
 	font-size: 16px;
 	line-height: 1.5;
 	margin: 0px auto;
+
+}
+
+.footer_description {
+	background-color: var(--grey-0);
+	padding: 56px 0;
+
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+
+	color: var(--grey-3);
 }

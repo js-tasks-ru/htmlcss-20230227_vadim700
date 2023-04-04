@@ -6,7 +6,16 @@
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, .4);
-	z-index: 2;
+}
+
+.modal_preview {
+	display: block;
+	position: relative;
+	background-color: var(--white);
+	text-align: left;
+	padding: 20px;
+	background: rgba(0, 0, 0, .15);
+	pointer-events: none;
 }
 
 .modal__body {
@@ -25,17 +34,26 @@
 	font-family: 'Inter', sans-serif;
 }
 
+.modal__inner_review {
+	padding: 15px;
+}
+
 .modal__close {
+	display: block;
 	position: absolute;
 	top: 15px;
 	right: 15px;
-	width: 16px;
-	height: 16px;
-	display: inline-block;
 	cursor: pointer;
 	line-height: 1;
 	border: none;
 	background: var(--white);
+}
+
+.modal__close svg {
+	display: block;
+	width: 16px;
+	height: 16px;
+
 }
 
 .modal__title {
