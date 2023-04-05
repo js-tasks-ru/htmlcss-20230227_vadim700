@@ -71,9 +71,3 @@ body {
 * {
     box-sizing: border-box;
 }
-
-.container {
-    max-width: 1140px;
-    margin: 0px auto;
-    padding: 0 15px;
-}

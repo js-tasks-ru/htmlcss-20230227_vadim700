@@ -1,0 +1,73 @@
+@import "../fonts/_fonts.scss";
+
+@import "../../components/page/_page.scss";
+@import "../../components/header/_header.scss";
+@import "../../components/main/_main.scss";
+@import "../../components/content/_content.scss";
+@import "../../components/card/_card.scss";
+@import "../../components/button/_button.scss";
+@import "../../components/input/_input.scss";
+@import "../../components/formgroup/_formgroup.scss";
+@import "../../components/component-description/_component-description.scss";
+@import "../../components/side-bar/_side-bar.scss";
+@import "../../components/description-wrapper/_description-wrapper.scss";
+@import "../../components/footer/_footer.scss";
+
+:root {
+    --white: #ffffff;
+    --black: #212429;
+    --highlight: #f784ad;
+    --purple: #7048e8;
+    --purple-2: #5028c6;
+    --blue: #4263eb;
+    --dark-blue: #374fc7;
+    --black-blue: #334d6e;
+    --grey-blue: #90a0b7;
+    --white-blue: #eceffd;
+    --red: #f03d3e;
+    --grey-0: #f9fafc;
+    --grey-1: #f8f9fa;
+    --grey-2: #dde2e5;
+    --grey-3: #acb5bd;
+    --grey-4: #495057;
+    --orange: #d84910;
+
+    --calendar: var(--black-blue);
+    --calendar-day: var(--grey-blue);
+    --calenar-between-bg: var(--white-blue);
+
+    --bacground: var(--grey-0);
+    --notification: var(--orange);
+    --error: var(--red);
+    --success: var(--dark-blue);
+
+    --primary: var(--blue);
+    --primary-btn-hover: #2342c0;
+    --secondary: var(--purple);
+    --secondary-btn-hover: var(--purple-2);
+
+    --skeleton-background: linear-gradient(
+        92.51deg,
+        #dde2e5 6.44%,
+        #e2e6e8 38.47%,
+        #f3f5f5 56.48%,
+        #e3e7ea 77.5%,
+        #dde2e5 102.52%
+    );
+}
+
+body,
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 0 15px;
+}

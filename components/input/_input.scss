@@ -1,0 +1,27 @@
+.input {
+	padding: 17px 24px;
+	width: 100%;
+	background: var(--white);
+	border: 1px solid var(--grey-2);
+	border-radius: 8px;
+	outline: none;
+
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.3;
+	color: var(--grey-4);
+
+	&::placeholder {
+		color: var(--grey-2);
+	}
+
+	&:focus {
+		border: 1px solid var(--blue);
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		background: var(--grey-2);
+		pointer-events: none;
+	}
+}
