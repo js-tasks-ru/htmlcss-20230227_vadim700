@@ -59,6 +59,8 @@ hr {
 	/* 1 */
 	overflow: visible;
 	/* 2 */
+	margin: 0;
+	padding: 0;
 }
 
 /**
@@ -376,4 +378,10 @@ template {
 
 [hidden] {
 	display: none;
+}
+
+figure,
+pre,
+code {
+	margin: 0;
 }
