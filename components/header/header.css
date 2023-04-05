@@ -1,10 +1,10 @@
 .header {
 	font-family: 'Inter', sans-serif;
-	background: var(--white);
+	background: var(--secondary-bg);
 }
 
 .header_description {
-	background-color: var(--grey-0);
+	background-color: var(--background);
 	text-align: center;
 	padding-top: 25px;
 	padding-bottom: 62px;
@@ -14,7 +14,7 @@
 	margin: 96px 0 77px;
 	font-size: 50px;
 	line-height: 1.2;
-	color: var(--black);
+	color: var(--text-primary);
 }
 
 .header__top {
@@ -111,4 +111,8 @@
 
 .header__burger-open::after {
 	bottom: 10px;
+
+	font-size: 50px;
+	line-height: 1.2;
+	color: var(--text-primary);
 }
