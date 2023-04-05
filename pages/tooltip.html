@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../node_modules/highlight.js/styles/atom-one-light.css">
+	<link rel="stylesheet" href="../assets/css/normalize.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+	<div class="page page_description">
+		<header class="header header_description">
+			<div class="container">
+				header
+			</div>
+		</header>
+		<main class="main main_descripton">
+			<div class="container" style="height: 100%;">
+				<div class="description-wrapper">
+					<aside class="description-wrapper__side-bar side-bar">
+						<h2 class="side-bar__title">Elements</h2>
+						<nav class="side-bar__nav">
+							<ul class="side-bar__list">
+								<li class="side-bar__item">
+									<a href="tooltip.html" class="side-bar__link side-bar__link_selected">Tooltip</a>
+								</li>
+								<li class="side-bar__item">
+									<a href="/pages/radio-buttons.html" class="side-bar__link ">Custom form elements</a>
+								</li>
+								<li class="side-bar__item">
+									<a href="/pages/calendar.html" class="side-bar__link">Calendar</a>
+								</li>
+								<li class="side-bar__item">
+									<a href="/pages/modal.html" class="side-bar__link ">Modal dialog</a>
+								</li>
+								<li class="side-bar__item">
+									<a href="/pages/histogram.html" class="side-bar__link ">Histogram</a>
+								</li>
+								<li class="side-bar__item">
+									<a href="/pages/avatar.html" class="side-bar__link ">Avatar</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+
+					<div class="description-wrapper__component-description component-description">
+						<div class="component-description__top">
+							<h1 class="component-description__title">Tooltip</h1>
+							<div class="component-description__top-content" style="padding: 70px 60px 50px">
+								<div class="tooltip">
+									<div class="tolltip__trigger">
+										<svg class="tooltip__icon">
+											<use href="/assets/images/sprite.svg#help"></use>
+										</svg>
+									</div>
+									<div class="tooltip__bubble">Helper Text</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="component-description__tabs tabs">
+							<input checked class="tabs__input tabs__input_html" type="radio" id="#html" name="tabs">
+							<input class="tabs__input tabs__input_css" type="radio" id="#css" name="tabs">
+							<div class="tabs__scroller">
+								<label class="tabs__label tabs__label_html" for="#html">HTML</label>
+								<label class="tabs__label tabs__label_css" for="#css">CSS</label>
+							</div>
+							<div class="tabs__content tabs__content_html">
+								<figure>
+									<pre>
+										<code class="language-html">
+&lt;div class="tooltip"&gt;
+	&lt;div class="tolltip__trigger"&gt;
+		&lt;svg class="tooltip__icon"&gt;
+			&lt;use href="/assets/images/sprite.svg#help"&gt;&lt;/use&gt;
+		&lt;/svg&gt;
+	&lt;/div&gt;
+	&lt;div class="tooltip__bubble"&gt;Helper Text&lt;/div&gt;
+&lt;/div&gt;
+										</code>
+									</pre>
+								</figure>
+							</div>
+							<div class="tabs__content tabs__content_css">
+								<figure>
+									<pre>
+										<code class="language-css">
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip__bubble {
+	position: absolute;
+	bottom: calc(100% + 13px);
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 13px 21px 8px;
+	display: none;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	white-space: nowrap;
+	color: var(--grey-2);
+	background: var(--blue);
+	box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+	border-radius: 10px;
+}
+
+.tooltip__icon {
+	width: 22px;
+	height: 22px;
+}
+
+.tooltip__bubble::after {
+	content: '';
+	border: 10px solid transparent;
+	border-top: 10px solid var(--blue);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.tolltip__trigger:hover~.tooltip__bubble {
+	display: block;
+}
+										</code>
+									</pre>
+								</figure>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer footer_description">Reusable component library</footer>
+	</div>
+	<script src="../highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</body>
+
+</html>
