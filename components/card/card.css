@@ -24,12 +24,20 @@
 }
 
 .card__content_grid-preview {
-	display: grid;
+	/* display: grid;
 	grid-template: repeat(3, auto)/repeat(2, auto);
 	justify-content: start;
 	margin: auto;
 	gap: 16px 37px;
-	grid-auto-flow: column;
+	grid-auto-flow: column; */
+
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	flex-wrap: wrap;
+	row-gap: 16px;
+	column-gap: 10px;
+	width: 100%;
 }
 
 .card__title {
