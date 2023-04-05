@@ -111,4 +111,8 @@
 
 .header__burger-open::after {
 	bottom: 10px;
+
+	font-size: 50px;
+	line-height: 1.2;
+	color: var(--text-primary);
 }
