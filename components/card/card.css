@@ -23,7 +23,7 @@
 	pointer-events: none;
 }
 
-.card__content_grid-preview {
+.card__content_columns {
 	/* display: grid;
 	grid-template: repeat(3, auto)/repeat(2, auto);
 	justify-content: start;
